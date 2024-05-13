@@ -10,10 +10,19 @@
 также управление подсветкой (адресная светодиодная лента) и спящий режим.
 Размеры платы были определены инженером-конструктором.
 
+Новая версия платы:
 ![1_ikrypt_v2](images/ikrypt2dview.jpg)
 
 ![2_ikrypt_v2](images/ikrypt3dview.jpg)
 
+Скриншоты приложения:
+
+![1_app](images/1.jpg)
+![2_app](images/2.jpg)
+![3_app](images/3.jpg)
+![4_app](images/4.jpg)
+
+Старая версия платы:
 ![1_ikrypt](https://github.com/flensimdotcore/iKrypt/assets/62958741/397a641d-efee-49ae-a721-f0f49553506d)
 
 ![2_ikrypt](https://github.com/flensimdotcore/iKrypt/assets/62958741/fa0e22dc-371d-4ef3-915c-5e01a0a38e01)
