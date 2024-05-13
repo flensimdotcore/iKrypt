@@ -1,13 +1,14 @@
 # iKrypt
-Firmware for IoT personal storage 'iKrypt"
+Прошивка для первой версии управляющей платы скрытого домашнего хранилища "iKrypt"
 
-In this repository you can find source code files in Arduino programming language with implemented
-stepper motor motion control, Bluetooth communication with iOS app "iKrypt" that is being developed specifically for this project.
-Code for RFID hasn't been done yet.
+В этом репозитории вы можете найти source код старой версии прошивки (новая будет доступна позже), а также 
+скриншоты из Altium Designer с 2D и 3D видами старой и новой версий платы управления, и скриншоты мобильного приложения.
+Движение отсеков реализовано с помощью шаговых моторов и различных кинематических систем. Управление происходит через мобильное приложение по Bluetooth либо Wi-Fi.
 
-Storage motherboard is designed in Altium Designer 20. It is considered as Arduino shield for Arduino Mega 2560.
-It contains Bluetooth module headers and RFID module headers as well as sockets for DIR/STEP stepper motor drivers control. 
-PCBs dimensions were defined by design engineer and it implies the addition of new features to the board.
+Разработка платы ведется в Altium Designer 20. Старая версия платы была Arduino-shield'ом для Arduino Mega 2560. В новой версии
+МК разведены на плате (а это AT32F403 и ESP32). На борту поддержка Bluetooth/Wi-Fi, RFID, управление несколькими шаговыми двигателями (DIR/STEP драйвера внешние),
+также управление подсветкой (адресная светодиодная лента) и спящий режим.
+Размеры платы были определены инженером-конструктором.
 
 ![1_ikrypt](https://github.com/flensimdotcore/iKrypt/assets/62958741/397a641d-efee-49ae-a721-f0f49553506d)
 
