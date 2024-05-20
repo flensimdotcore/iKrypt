@@ -41,12 +41,12 @@
 
 /* Defining distances for stepper motors */
 
-#define WALL_DRIVE_DISTANCE 86450 // 5000 = 36 mm // СИЛОВАЯ СТВОРКА
-#define DOOR_DRIVE_DISTANCE 5000 // ДЕКОРАТИВНАЯ ДВЕРКА
-#define LEFT_DRIVE_DISTANCE 29000 // 57550 // НИЖНИЙ МОТОР // чуток переехал
-#define RIGHT_DRIVE_DISTANCE 2300 // ЛЕВЫЙ МОТОР
-#define TOP_DRIVE_DISTANCE 2300 // ПРАВЫЙ МОТОР
-#define BOTTOM_DRIVE_DISTANCE 27700 // 55000 // ВЕРХНИЙ МОТОР // не доехал 1 см
+#define WALL_DRIVE_DISTANCE 86450
+#define DOOR_DRIVE_DISTANCE 5000
+#define LEFT_DRIVE_DISTANCE 29000
+#define RIGHT_DRIVE_DISTANCE 2300
+#define TOP_DRIVE_DISTANCE 2300
+#define BOTTOM_DRIVE_DISTANCE 27700
 #define CURTAIN1_DRIVE_DISTANCE 100
 #define CURTAIN2_DRIVE_DISTANCE 100
 
