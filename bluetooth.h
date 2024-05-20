@@ -48,7 +48,6 @@ extern bool WORK_FLAG;
 
 extern uint8_t cycles_left;
 
-void ping();
 void ping_res();
 void identify_res(char *STATUS_CODE);
 void open_door_res(char *STATUS_CODE);
@@ -56,7 +55,6 @@ void switch_crate_res(char *STATUS_CODE);
 void get_state_res(char *STATUS_CODE);
 void close_door_res(char *STATUS_CODE);
 
-void license_activation();
 void ping_Bluetooth();
 void parser();
 
