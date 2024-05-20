@@ -8,22 +8,24 @@
 
 /* Defines for states of FSM */
 
-#define LEFT_CRATE_STATE 0
-#define RIGHT_CRATE_STATE 1
-#define TOP_CRATE_STATE 2
-#define BOTTOM_CRATE_STATE 3
-#define IDLE_STATE 4
+#define LEFT_CRATE_STATE 1
+#define RIGHT_CRATE_STATE 3
+#define TOP_CRATE_STATE 0
+#define BOTTOM_CRATE_STATE 2
+//#define IDLE_STATE 4
 #define OPEN_STATE 5
-#define CLOSE_STATE 6
+#define CLOSE_STATE 4
 #define EMPTY_CENTER_STATE 7
 #define ERROR_STATE 8
 
+#define BLE_CLOSE_STATE 4
+
 /* Defines for signals of FSM */
 
-#define LEFT_CRATE_SIGNAL 0
-#define RIGHT_CRATE_SIGNAL 1
-#define TOP_CRATE_SIGNAL 2
-#define BOTTOM_CRATE_SIGNAL 3
+#define LEFT_CRATE_SIGNAL 3
+#define RIGHT_CRATE_SIGNAL 2
+#define TOP_CRATE_SIGNAL 1
+#define BOTTOM_CRATE_SIGNAL 4
 #define IDLE_SIGNAL 4
 #define OPEN_SIGNAL 5
 #define CLOSE_SIGNAL 6
@@ -31,7 +33,7 @@
 
 /* Defines for transitions of FSM */
 
-#define IDLE_TO_OPEN_WALL_TRANSITION 0
+#define IDLE_TO_OPEN_WALL_TRANSITION 22
 #define OPEN_WALL_TO_OPEN_DOOR_TRANSITION 1
 #define LEFT_CRATE_TO_RIGHT_CRATE_TRANSITION 2
 #define LEFT_CRATE_TO_TOP_CRATE_TRANSITION 3
