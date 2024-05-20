@@ -12,7 +12,7 @@
 #define RIGHT_CRATE_STATE 3
 #define TOP_CRATE_STATE 0
 #define BOTTOM_CRATE_STATE 2
-//#define IDLE_STATE 4
+#define IDLE_STATE 4
 #define OPEN_STATE 5
 #define CLOSE_STATE 4
 #define EMPTY_CENTER_STATE 7
