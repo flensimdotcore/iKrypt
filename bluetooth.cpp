@@ -12,29 +12,6 @@ uint8_t cycles_left = EEPROM[10];
 
 /* Bluetooth functions */
 
-void license_activation() {
-  int activation_input_buffer_counter = 0;
-  char activation_input_buffer[INPUT_BUFFER_SIZE];
-
-  for (int i = 0; i < INPUT_BUFFER_SIZE; i++) {
-    activation_input_buffer[i] = input_buffer[i];
-    Serial.print(input_buffer[i]);
-  }
-
-  if (activation_input_buffer == "AXZY-STPF-SRRE") {
-    LICENSE_FLAG = 1;
-    EEPROM.update(30, LICENSE_FLAG);
-    LICENSE_FLAG = EEPROM[30];
-
-    TRIAL_PERIOD_FLAG = 0;
-    EEPROM.update(20, TRIAL_PERIOD_FLAG);
-    TRIAL_PERIOD_FLAG = EEPROM[20];
-    Serial1.write(ACTIVATION_SUCCESS);
-  } else {
-    Serial1.write(ACTIVATION_FAILURE);
-  }
-}
-
 void ping_Bluetooth() {
   while (Serial1.available()) {
     Serial.write(Serial1.read());
@@ -83,11 +60,6 @@ void parser() {
     }
     INPUT_DATA_FLAG = 0;
   } 
-}
-
-
-void ping() {
-  Serial1.print("PING\t");
 }
 
 void ping_res() {
