@@ -32,48 +32,5 @@ void FSM_table_init() {
 }
 
 void FSM_classifier() {
-  switch (input_buffer[0]) {
-    case OPEN:
-      current_signal = OPEN_SIGNAL;
-      break;
-    case LEFT_CRATE:
-      current_signal = LEFT_CRATE_SIGNAL;
-      break;
-    case RIGHT_CRATE:
-      current_signal = RIGHT_CRATE_SIGNAL;
-      break;
-    case TOP_CRATE:
-      current_signal = TOP_CRATE_SIGNAL;
-      break;
-    case BOTTOM_CRATE:
-      current_signal = BOTTOM_CRATE_SIGNAL;
-      break;
-    case EMPTY_CENTER:
-      current_signal = EMPTY_CENTER_SIGNAL;
-      break;
-    case CLOSE:
-      current_signal = CLOSE_SIGNAL;
-      break;
-  }
-
-  if (!OPENED_FLAG && current_signal == OPEN_SIGNAL) {
-    open_wall();
-    open_door();
-    Serial.println("Opened!");
-    OPENED_FLAG = 1;
-    current_state = EMPTY_CENTER_STATE;
-  } else if (current_signal == CLOSE_SIGNAL && OPENED_FLAG) {
-    close_door();
-    close_wall();
-    Serial.println("Closed!");
-    OPENED_FLAG = 0;
-
-    cycles_left = EEPROM[10];
-    cycles_left--;
-    EEPROM.update(10, cycles_left);
-    Serial.print(cycles_left);
-    Serial.println(" cycles left...");
-  }
-
   motors_movement();
 }
