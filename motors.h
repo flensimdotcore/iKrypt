@@ -11,7 +11,7 @@
 /* Defines for stepper motors control parameters */
 
 #define ACCELERATION 200
-#define SPEED 2500 // Гене понравилось 1000, было 3000 рабочая
+#define SPEED 2500
 
 #define FORWARD 1
 #define BACKWARDS 0
