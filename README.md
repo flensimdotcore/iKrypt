@@ -23,6 +23,7 @@
 ![4_app](images/4.jpg)
 
 Старая версия платы:
+
 ![1_ikrypt](https://github.com/flensimdotcore/iKrypt/assets/62958741/397a641d-efee-49ae-a721-f0f49553506d)
 
 ![2_ikrypt](https://github.com/flensimdotcore/iKrypt/assets/62958741/fa0e22dc-371d-4ef3-915c-5e01a0a38e01)
